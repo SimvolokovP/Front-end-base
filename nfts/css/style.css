@@ -1,0 +1,334 @@
+html,body{
+    height: 100%;
+}
+
+
+.header{
+    padding-top: 81px;
+}
+
+
+.container{
+    max-width: 1095px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 20px;
+    background-color: #010922;
+    
+}
+
+h2{
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.header__list{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header__item:not(:last-child){
+    margin-right: 49px;
+}
+
+
+
+
+.header__item-link{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+.header__title{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 152px;
+}
+
+
+
+.hero__inner{
+    display: flex;
+    
+}
+
+
+.hero__inner-info{
+    padding-top: 134px;
+    margin-right: 64px;
+    max-width: 525px;
+}
+
+
+
+.hero__title{
+    font-size: 87px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 52px;
+    max-width: 482px;
+}
+
+
+.hero__desc{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+    max-width: 373px;
+}
+
+
+.hero__bttns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__btns-buy,
+.hero__btns-sell{
+    padding: 25px 75px;
+    background-color: #9090DB;
+    max-width: 255px;
+    width: 100%;
+    min-width: 105px;
+    border-radius: 80px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero__btns-sell{
+    border: 2px;
+    border: solid;
+    border-color: #88D0D1;
+    background-color: transparent;
+    
+}
+
+
+
+
+.featured{
+    padding: 30px 0;
+}
+
+
+
+
+
+
+.featured__block{
+    background-color: #29235D;
+}
+
+
+.featured__title{
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    max-width: 195px;
+    line-height: 27.5px;
+}
+
+
+
+.featured__list{
+    padding: 0 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.analytics{
+    margin-top: 152px;
+}
+
+.analytics__inner{
+    display: flex;
+}
+
+.analytics__img{
+    padding-right: 9px;
+}
+
+.analytics__inner-info{
+    max-width: 616px;
+}
+
+
+.analytics__title{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+    font-weight: 400;
+    max-width: 114px;
+}
+
+.analytics__text{
+    font-size: 66px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+    max-width: 555px;
+}
+
+.analytics__info{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 19px;
+    font-weight: 400;
+    max-width: 383px;
+}
+
+
+.analytics__price{
+    display: block;
+    padding: 30px 126px;
+    background-color: #9090DB;
+    max-width: 30px;
+    min-width: 177px;
+    border-radius: 80px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.comments{
+    padding: 157px;
+}
+
+
+
+.commnents__title{
+    font-size: 56px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 162px;
+    max-width: 577px;
+    text-align: center;
+}
+
+
+.comments__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.comments__elements{
+    background-color: #29235D;
+    max-width: 255px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.comments__text{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 28px;
+}
+
+
+
+
+.footer__title{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.footer__inner{
+    display: flex;
+}
+
+.footer__list{
+    margin-top: 0;
+    display: flex;
+}
+
+
+.footer{
+    display: block;
+    padding-top: 66px;
+}
+
+
+
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 191px;
+    
+}
+
+
+.footer__item-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer__link{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
