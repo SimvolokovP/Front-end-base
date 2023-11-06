@@ -1,0 +1,256 @@
+@media (max-width: 1055.9px) {
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__item:not(:last-child) {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 998.9px) {
+    :root {
+        --offset: 65px
+    }
+
+    .features__inner {
+        display: block;
+    }
+
+    .features__titles {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .features__title {
+        margin-bottom: 20px;
+    }
+
+    .title__chapter {
+        margin-bottom: 20px;
+    }
+
+    .games__inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 200px;
+    }
+
+    .accessories__inner {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 840.9px) {
+    .news__inner {
+        grid-template-columns:  none;
+    }
+
+    .form__btn {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .news__info {
+        margin-bottom: 10px;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header__list {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 10px 5px 20px 5px;
+        flex-direction: column;
+        bottom: -155px;
+        background-color: black;
+        max-width: 320px;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .header__list.header__list--active {
+        transform: translateX(0%);
+        transition: all 1s;
+    }
+
+    .header__link {
+        color: white;
+        font-size: 22px;
+    }
+
+    .header__item {
+        margin: 0;
+    }
+
+    .header__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .hero {
+        padding-top: 150px;
+    }
+    .hero__inner {
+        padding-bottom: 240px;
+    }
+}
+
+@media (max-width: 780.9px) {
+    .box__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media (max-width: 767.9px) {
+    .btn__span-buy,
+    .btn__span-price {
+        padding: 19px 40px;
+    }
+    .hero__title {
+        font-size: 80px;
+        margin-bottom: 5px;
+    }
+    .hero__subtitle {
+        font-size: 28px;
+    }
+
+    .hero__text {
+        margin-bottom: 32px;
+    }
+
+    .tab__content-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .tab__item-text {
+        max-width: 423px;
+    }
+
+    .games__inner {
+        padding-top: 520px;
+    }
+
+    .games__title {
+        display: none;
+    }
+
+    .preview__btn {
+        margin: 0 auto 5px;
+    }
+
+    .video__control {
+        bottom: 20%;
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 606.9px) {
+    .box__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+    .box__item--p {
+        grid-row-start: 1;
+    }
+
+    
+}
+
+@media (max-width: 581.9px) {
+    .games__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .accessories__inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .footer__list {
+        display: none;
+    }
+}
+
+@media (max-width: 520.9px) {
+    .header__list {
+        max-width: 100%;
+    }
+
+    .btn {
+        height: 35px;
+        margin-bottom: 8px;
+        padding: 0;
+        
+        padding: 2px;
+        font-size: 12px;
+        
+        
+    }
+
+    .btn__span-buy, .btn__span-price {
+        padding: 8px 36px;
+    }
+
+    .hero__title {
+        font-size: 67px;
+        margin-bottom: 5px;
+    }
+    .hero__subtitle {
+        font-size: 19px;
+    }
+
+    .hero__text {
+        margin-bottom: 24px;
+    }
+
+    .tab__btn {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width: 444.9px) {
+    .preview__bc {
+        font-size: 320px;
+    }
+
+    .box__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box__item--p {
+        order: -1;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__contacts {
+        order: -1;
+        margin-bottom: 6px;
+    }
+}
