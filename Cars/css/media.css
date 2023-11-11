@@ -1,0 +1,146 @@
+@media (max-width: 1300px) {
+    .rent__inner {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 120px;
+        z-index: 1000;
+        background-color: var(--black-color);
+        text-align: center;
+        transform: translateX(100%);
+        transition: all 0.3 ease-in-out;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .menu--visible {
+        transition: all 0.3 ease-in-out;
+        transform: translateX(0%);
+    }
+
+    .header__list {
+        flex-direction: column;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .header__link {
+        font-size: 25px;
+    }
+
+    .header__logo {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    .hero__cover::before {
+        width: 635px;
+        height: 342px;
+    }
+
+    .service__inner {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    .service__item-descr {
+        max-width: 384px;
+        margin: 0 auto;
+    }
+
+    .destination__inner {
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .destination__item {
+        
+        margin: 0 auto;
+    }
+
+    .info__inner {
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .info__location {
+        margin: 0 auto;
+    }
+
+    .footer__top {
+        
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 940px) {
+    .hero__cover::before {
+        display: none;
+    }
+
+    .hero__cover {
+        display: none;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero__intr {
+        margin-right: 0;
+    }
+
+    .hero__info {
+        text-align: center;
+    }
+
+    .hero__links {
+        text-align: center;
+    }
+
+    .hero__marks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__chapter:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero__title {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        padding-top: 35px;
+    }
+}
