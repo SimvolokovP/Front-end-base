@@ -1,0 +1,244 @@
+@media (max-width: 1200px) {
+    .blog-page__inner {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-page__item--main {
+        grid-column: span 2;
+    }
+
+    .blog-page__item--cover {
+        display: flex;
+        align-items: center;
+        height: min-content;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tabs__left {
+        height: 570px;
+    }
+
+    .tabs__right {
+        max-width: 100%;
+    }
+
+    .tabs__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tabs__element::after {
+        display: none;
+    }
+
+    .tabs__chapter::after {
+        display: none;
+    }
+
+    .btn__tab--active::after {
+        left: 87px;
+        top: -16px;
+        transform: rotate(90deg);
+    }
+
+    .tabs__chapter {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-top__title {
+        margin-right: 0; 
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .btn__burger {
+        display: flex;
+        z-index: 3;
+    }
+
+    .burger--active {
+        justify-content: center;
+    }
+
+    .burger--active span:last-of-type {
+        opacity: 0;
+    }
+
+    .burger--active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .burger--active span:nth-child(2) {
+        width: 18px;
+        transform: rotate(-45deg) translateY(-1px) translateX(1px);
+    }
+
+    .header__bottom {
+        padding: 17px 0 0;
+    }
+
+    .hero__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .hero__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .hero__item {
+        justify-content: space-between;
+    }
+
+    .hero__item::after {
+        display: none;
+        
+    }
+
+    .hero__item--img {
+        margin-right: 0;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: #262D33;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 16px 0 16px;
+        height: 100vh;
+        transform: translateX(-100%); 
+        transition: transform .3s;
+        z-index: 2;
+        overflow-y: auto;
+    }
+
+    .menu--active {
+        transform: translateX(0);
+    }
+
+    .header__link {
+        font-size: 24px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .stop-scroll {
+        overflow: hidden;
+    }
+
+    .btn__tab {
+        height: 100%;
+    }
+
+    .btn__tab--active::after {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .btn__tab--text {
+        display: none;
+    }
+
+    .tabs__right {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .tabs {
+        position: relative;
+    }
+}
+
+@media (max-width: 850px) {
+    .blog-page__item--cover {
+        display: none;
+    }
+
+    .blog-quote__footbox::before,
+    .blog-quote__chapterbox::after {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .header-top__info {
+        display: flex;
+        align-items: start; 
+        flex-direction: column;
+    }
+
+    .header-top__content {
+        display: flex;
+        
+        padding-left: 30px;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 693px) {
+    .header-top__content {
+        display: none;
+    }
+
+    .header-top__main {
+        padding: 10px 0;
+    }
+
+    .hero__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 633px) {
+    .sub__img {
+        display: none;
+    }
+
+    .btn__sign {
+        
+        margin-right: 0;
+    }
+
+    .header-top__form {
+        padding: 15px 0 15px 5px;
+    }
+
+    .header-top__bar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header-top__sub {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 424px) {
+    .header-top__main {
+        flex-direction: column;
+    }
+}
