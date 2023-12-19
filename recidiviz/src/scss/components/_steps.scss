@@ -1,0 +1,93 @@
+.steps {
+    padding: 120px 0 140px;
+    &__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 57px;
+        color: #003331;
+        font-family: var(--second-font);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px; 
+        letter-spacing: 1.2px;
+        max-width: 717px;
+        text-align: center;
+    }
+
+    &__list {
+        justify-content: space-between;
+        width: 100%;
+        max-width: 758px;
+        margin: 0 auto;
+        counter-reset: steps;
+
+        
+        
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 126px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &::before {
+            counter-increment: steps;
+            content: counter(steps);
+            display: block;
+            width: 48px;
+            height: 48px;
+            color: var(--light-color);
+            background-color: #014C48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            border-radius: 100%;
+            margin-bottom: 19px;
+        }
+
+        &--line {
+            flex-grow: 1;
+            position: relative;
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #355362;
+                opacity: 20%;
+                display: block;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                margin-top: -45px;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0;
+        color: rgba(53, 83, 98, 0.80);
+        text-align: center;
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+    }
+}

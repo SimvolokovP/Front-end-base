@@ -1,0 +1,167 @@
+.press {
+    padding: 87px 0;
+    background-color: #F4F5F5;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 33px;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    &__title {
+        margin: 0;
+        color: #003331;
+        font-family: 'LibreBaskerville',sans-serif;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px; 
+        letter-spacing: 1.2px;
+    }
+
+    &__btn {
+        color: #00413E;
+        border-color: rgba(53, 83, 98, 0.20);
+
+        &:focus {
+            background-color: #003331;
+            color: var(--light-color);
+            border-color: #003331;
+        }
+
+        @include hover {
+            background-color: #003331;
+            color: var(--light-color);
+            border-color: #003331;
+        }
+
+        &:active {
+            background-color: #003331;
+            color: var(--light-color);
+            border-color: #003331;
+        }
+    }
+
+    &__list {
+        row-gap: 32px;
+    }
+
+    &__item {
+        padding-top: 16px;
+        grid-column: 4 span;
+        border-top: 1px solid rgba(53, 83, 98, 0.30);
+        min-height: 145px;
+    }
+}
+
+.press__btn.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.press-block {
+    &__top {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 7px;
+        align-items: center;
+    }
+
+    &__author {
+        margin: 0;
+        color: rgba(53, 83, 98, 0.60);
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 16px;
+        }
+
+        &--ted {
+            background-repeat: no-repeat;
+            background-image: url(../img/ted.svg);
+        }
+
+        &--cn {
+            background-repeat: no-repeat;
+            background-image: url(../img/cn.svg);
+        }
+
+        &--doj {
+            background-repeat: no-repeat;
+            background-image: url(../img/doj.svg);
+        }
+
+        &--nyt {
+            background-repeat: no-repeat;
+            background-image: url(../img/nyt.svg);
+        }
+
+        &--corrections1 {
+            background-repeat: no-repeat;
+            background-image: url(../img/corrections1.svg);
+        }
+
+        &--roc {
+            background-repeat: no-repeat;
+            background-image: url(../img/roc.svg);
+        }
+    }
+
+    &__date {
+        color: rgba(53, 83, 98, 0.60);
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 0;
+        color: #00413E;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24.65px; 
+    }
+
+    &__link {
+        margin: 0;
+        color: #00413E;
+        transition: color .3s ease-in-out;
+        &:focus {
+            color: var(--accent-color);
+        }
+
+        @include hover {
+            color: var(--accent-color);
+        }
+
+        &:active {
+            color: var(--active-color);
+        }
+    }
+}
+
+.press-block__link.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+}

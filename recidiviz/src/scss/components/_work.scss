@@ -1,0 +1,67 @@
+.work {
+    padding: 146px 0 133px;
+    background-color: #001F1F;
+
+    &__info {
+        grid-column: 4 span;
+        @include mobile {
+           text-align: center;
+        }
+    }
+
+    &__img {
+        grid-column: 7/6 span;
+        padding-top: 9px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 43px;
+        color: #FAFAFA;
+        font-family: "LibreBaskerville", sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 52px; 
+        letter-spacing: 1.2px;
+    }
+
+    &__descr {
+        margin: 0;
+        margin-bottom: 37px;
+        color: #FAFAFA;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        max-width: 326px;
+    }
+
+    &__btn {
+        background-color: #00665F;
+        border-color: #00665F;
+
+        &:focus {
+            border-color: #FAFAFA;
+            color: #FAFAFA;
+        }
+
+        @include hover {
+            border-color: #FAFAFA;
+            color: #FAFAFA;
+        }
+
+        &:active {
+            border-color: #FAFAFA;
+            background-color: #00665F;
+        }
+    }
+}
+
+.work__btn.focus-visible {
+    border-color: var(--active-color);
+}

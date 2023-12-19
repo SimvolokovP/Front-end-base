@@ -1,0 +1,164 @@
+.footer {
+    
+    background-color: #001414;
+
+    &__top {
+        padding: 112px 0 137px;
+    }
+
+    &__container {
+        @include mobile {
+            row-gap: 32px;
+        }
+    }
+
+    &__column {
+        grid-column: 2 span;
+
+        @include small-tablet {
+            grid-column: 3 span;
+        }
+
+        @include mobile {
+            grid-column: 2 span;
+        }
+
+        &:last-child {
+            grid-column: 11 / 2 span;
+
+            @include mobile {
+                grid-column: 2 span;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: #7D9798;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 145.455% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 1px;
+            background-color: #25B895;
+        }
+    }
+
+    &__link {
+        margin: 0;
+        color: #EDECEB;
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; 
+        transition: color .3s ease-in-out;
+
+        &:focus {
+            color: #25B895;
+        }
+
+        @include hover {
+            color: #25B895;
+        }
+
+        &:active {
+            color: #25B895;
+        }
+    }
+
+    &__bottom {
+        padding: 45px 0 63px;
+        background-color: #000F0F;
+
+        &--container {
+            justify-content: space-between;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &--list {
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        &--link {
+            color: #E5ECEC;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 10px;
+            transition: color .3s ease-in-out;
+
+            &:focus {
+                color: #25B895;
+            }
+    
+            @include hover {
+                color: #25B895;
+            }
+    
+            &:active {
+                color: #25B895;
+            }
+
+        }
+
+        &--policy {
+            color: #E5ECEC;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 10px;
+            transition: color .3s ease-in-out;
+
+            &:focus {
+                color: #25B895;
+            }
+    
+            @include hover {
+                color: #25B895;
+            }
+    
+            &:active {
+                color: #25B895;
+            }
+
+            & span {
+                font-size: 10px;
+            }
+
+        }
+    }
+}
+
+.footer__link.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+    color: #25B895;
+}
+
+.footer__botton--link.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+    color: #25B895;
+}
+
+.footer__botton--policy.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+    color: #25B895;
+}

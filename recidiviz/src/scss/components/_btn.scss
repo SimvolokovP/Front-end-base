@@ -1,0 +1,35 @@
+.btn {
+    color: var(--light-color);
+    font-size: var(--main-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-color);
+    border-radius: 80px;
+    padding: 17px 33px;
+    transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
+
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        outline: none;
+    }
+
+    @include hover {
+        border-color: var(--active-color);
+        color: var(--active-color);
+    }
+
+    &:active {
+        background-color: var(--active-color); 
+        border-color: var(--active-color);
+    }
+}
+
+.btn.focus-visible {
+    border-color: var(--active-color);
+}

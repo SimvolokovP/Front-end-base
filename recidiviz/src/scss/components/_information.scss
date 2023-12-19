@@ -1,0 +1,55 @@
+.information {
+    padding-bottom: 140px;
+    background-color: #F4F5F5;
+
+    &__title {
+        font-family: "LibreBaskerville", sans-serif;
+        margin: 0;
+        grid-column: 5 span;
+        color: #003331;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px; 
+        letter-spacing: 1.2px;
+        max-width: 420px;
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list {
+        grid-column: 7/6 span;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 32px;
+        row-gap: 36px;
+
+        @include mobile {
+            grid-column: 1/6 span;
+        }
+    }
+
+    &__item {
+        grid-column: 3 span;
+
+        &--title {
+            margin: 0;
+            margin-bottom: 4px;
+            color: #003331;
+            font-size: var(--second-size);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &--descr {
+            margin: 0;
+            color: rgba(53, 83, 98, 0.80);
+            font-size: var(--second-size);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+    }
+}

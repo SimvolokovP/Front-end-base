@@ -1,0 +1,102 @@
+.hero {
+    padding: 190px 0 40px;
+    min-height: 776px;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include small-tablet {
+        gap: 20px;
+    }
+
+    &__content {
+        grid-column: 6 span;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 29px;
+        color: var(--light-color);
+        font-family: 'LibreBaskerville', sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px; 
+        letter-spacing: 1.2px;
+
+        @include small-tablet {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    &__descr {
+        margin: 0;
+        margin-bottom: 29px;
+        color: var(--light-color);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+    }
+
+    &__list {row-gap: 20px;}
+
+    &__container-bottom {
+        width: 100%;
+    }
+
+    &__chapter {
+        margin: 0;
+        margin-bottom: 15px;
+        color: var(--light-color);
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+    }
+
+    &__item {
+        grid-column: 2 span;
+        border-top: 1px solid var(--light-color);
+        padding-top: 17px;
+        opacity: 60%;
+        transition: color .3s ease-in-out, opacity .3s ease-in-out;
+
+        &:focus {
+            outline: none;
+        }
+
+
+        @include hover {
+            cursor: pointer;
+            color: var(--light-color);
+            opacity: 100%;
+        }
+
+        &:active {
+            color: var(--light-color);
+            opacity: 100%;
+        }
+    }
+
+    &__link {
+        color: var(--light-color);
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+}
+
+.hero__item.focus-visible {
+    outline: 1px solid var(--light-color);
+    outline-offset: 3px;
+}

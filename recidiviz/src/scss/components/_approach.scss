@@ -1,0 +1,133 @@
+.approach {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__info {
+        grid-column: span 5;
+        margin-bottom: 140px;
+        padding-top: 33px;
+
+        @include mobile {
+            margin-bottom: 40px;
+
+        }
+    }
+
+    &__cover {
+        grid-column: 7 / 6 span;
+
+        @include mobile {
+            grid-column: 1/6 span;
+
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 13px;
+        color: #003331;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    &__descr {
+        margin: 0;
+        margin-bottom: 37px;
+        color: rgba(53, 83, 98, 0.80);
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 160% */
+    }
+
+    &__btn {
+        border: 1px solid rgba(53, 83, 98, 0.20);
+        color: #003331;
+    }
+
+    &__list {
+        @include tablet {
+            row-gap: 32px;
+        }
+    }
+
+    &__item {
+        grid-column: 2 span;
+        border-top: 1px solid #355362;
+        padding-top: 17px;
+        color: rgba(53, 83, 98, 0.80);
+        transition: color .3s ease-in-out, border-color .3s ease-in-out;
+
+        @include tablet {
+            grid-column: 4 span;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+
+        @include hover {
+            color: var(--active-color);
+            border-color: var(--active-color);
+        }
+
+        &:active {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    }
+
+    &__link {
+        color: inherit;
+        font-size: var(--second-size);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 160% */
+        display: flex;
+        
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 8px;
+        }
+
+        &--ted::before {
+            background-image: url(../img/ted.svg);
+        }
+
+        &--nyt::before {
+            background-image: url(../img/nyt.svg);
+        }
+
+        &--statescoop::before {
+            background-image: url(../img/stateschool.svg);
+        }
+
+        &--press::before {
+            background-image: url(../img/press.svg);
+        }
+
+        &--time::before {
+            background-image: url(../img/time.svg);
+        }
+
+        &--freethink::before {
+            background-image: url(../img/freethink.svg);
+        }
+    }
+}
+
+.approach__link.focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+}
