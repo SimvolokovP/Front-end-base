@@ -1,0 +1,35 @@
+.benefits {
+  padding: 120px 0;
+  background-color: #F9F9F9;
+
+
+  &__list {
+    column-gap: 40px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+
+  &__chapter {
+    display: inline-flex;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #141024;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 38.4px */
+  }
+
+  &__text {
+    margin: 0;
+    color: rgba(20, 16, 36, 0.70);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+
+
+}

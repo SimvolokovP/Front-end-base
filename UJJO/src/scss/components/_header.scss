@@ -1,0 +1,85 @@
+.header {
+    background-color: var(--light-color);
+
+    &__inner {
+        padding: 17px 22px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+.menu {
+    &__list {
+        align-items: center;
+    }
+
+    &__item {
+        padding: 15px 45px;
+        margin-right: 55px;
+        color: var(--dark-color);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tablet {
+            margin-right: 0;
+        }
+
+        &--logo {
+            padding: 0;
+            // display: flex;
+            // align-items: center;
+            // gap: 30px;
+
+            // &::before {
+            //     content: "";
+            //     width: 17px;
+            //     height: 17px;
+            //     display: block;
+            //     background-color: var(--red-color);
+            //     border: 1px solid var(--dark-color);
+            //     border-radius: 100%;
+            // }
+
+            // &::after {
+            //     content: "";
+            //     width: 17px;
+            //     height: 17px;
+            //     display: block;
+            //     background-color: var(--purple-color);
+            //     border: 1px solid var(--dark-color);
+            //     border-radius: 100%;
+            // }
+        }
+    }
+
+    &__link {
+        color: inherit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21.6px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: color .2s ease-in-out;
+
+        &:focus {
+            outline: none;
+            color: var(--red-color);
+        }
+
+        @include hover {
+            color: var(--red-color);
+        }
+
+        &:active {
+            color: var(--red-color);
+        }
+    }
+}
+
+.header__link.focus-visible {
+    color: var(--red-color);
+}

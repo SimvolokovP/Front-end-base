@@ -1,0 +1,88 @@
+.order {
+  padding: 87px 0;
+  background-color: #D52027;
+  background-image: url(../img/perce.svg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto;
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 456px;
+    padding: 20px 0 0 60px;
+  }
+
+  &__content {
+    margin-right: 60px;
+
+    max-width: 500px;
+    width: 100%;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 46.8px */
+  }
+
+  &__text {
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    padding: 21px;
+    height: 64px;
+    &::placeholder {
+      color: rgba(40, 41, 68, 0.70);
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__btn {
+    background-color: #141024;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px 0;
+  }
+
+  .just-validate-error-label {
+    margin-bottom: 3px;
+    color: #fff !important;
+  }
+}

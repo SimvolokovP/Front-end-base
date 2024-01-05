@@ -1,0 +1,30 @@
+.tooltip {
+  margin-left: 10px;
+  @include flex-all-center;
+  display: inline-block;
+  &__btn {
+    @include hover {
+      + .tooltip__txt {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__txt {
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out ;
+    opacity: 0;
+    visibility: hidden;
+    color: #141024;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.10);
+  }
+}

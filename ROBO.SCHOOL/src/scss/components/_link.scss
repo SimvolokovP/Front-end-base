@@ -1,0 +1,36 @@
+.link {
+  color: #FFF;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  background-color: #D52027;
+  border: 1px solid #D52027;
+  border-radius: 5px;
+  padding: 25px 54px;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+  &:focus {
+    background-color: #FFF;
+    color: #D52027;
+
+  }
+
+  @include hover {
+    background-color: #FFF;
+    color: #D52027;
+  }
+
+  &:active {
+    background-color: #FFF;
+    color: #D52027;
+  }
+}
+
+.link.focus-visible {
+  outline: #FFF;
+}

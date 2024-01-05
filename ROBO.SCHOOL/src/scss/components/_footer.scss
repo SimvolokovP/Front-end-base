@@ -1,0 +1,35 @@
+.footer {
+  padding: 40px 0;
+  background-color: #141024;
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+
+    &::after {
+      content: '© ROBO.SCHOOL';
+      display: block;
+      color: rgba(255, 255, 255, 0.70);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+
+  &__phone {
+    color: #FFF;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+  }
+}
